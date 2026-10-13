@@ -1,5 +1,7 @@
 # AI Space · 你的私人 AI 空间
 
+在线使用：[https://sandiansky.github.io/ai-space/](https://sandiansky.github.io/ai-space/) · [GitHub 源码](https://github.com/sandiansky/ai-space)。首次打开请在「设置」中填写自己的 API Key，密钥不会随部署上传。
+
 React + Vite + TypeScript 开发的手机优先 AI 工具网站。纯静态前端，直接调用 GPT.GE（V-API），没有后端、数据库或登录。API Key 由使用者在网页设置中输入；仓库和构建文件不需要密钥。
 
 ## 先看验证范围

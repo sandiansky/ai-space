@@ -1,0 +1,23 @@
+{
+  "Url": "https://sandiansky.github.io/ai-space/",
+  "Status": 200,
+  "Title": "AI Space · 你的私人 AI 空间",
+  "ManifestStatus": 200,
+  "StartUrl": "/ai-space/",
+  "Scope": "/ai-space/",
+  "Assets": [
+    {
+      "Path": "/ai-space/assets/index-BY7Uskup.js",
+      "Status": 200
+    },
+    {
+      "Path": "/ai-space/assets/index-DK7SQHZJ.css",
+      "Status": 200
+    }
+  ],
+  "CheckedAt": "2026-10-13T01:58:52.184783Z",
+  "Repository": "https://github.com/sandiansky/ai-space",
+  "WorkflowRun": "https://github.com/sandiansky/ai-space/actions/runs/38334590709",
+  "WorkflowConclusion": "success",
+  "BrowserUiVerified": false
+}

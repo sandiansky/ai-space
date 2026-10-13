@@ -8,6 +8,7 @@
 - `npm run test:ui`：18 项通过（Chrome 9 项、WebKit 9 项），覆盖 375、390、430、1440 像素三个页面无横向溢出，hash 导航和刷新、深色主题、sessionStorage 默认密钥、本机持久保存明确确认、流式 Markdown、本地历史、重新生成确认、编辑 multipart、生成 JSON、对比切换和错误显示，并增加 GPT Image 默认值与单图适配检查。
 - UI 自动化中的 API 使用明确的协议测试样本，证明浏览器接线和行为；不宣称样本是 GPT.GE 的真实 AI 回答或图片。生产应用不包含测试样本。
 - 生产 `/ai-space/` 子路径构建、manifest/start_url/scope、Service Worker 与离线刷新检查，原始记录见 [production-check.json](production-check.json)。
+- GitHub Pages 已上线至 https://sandiansky.github.io/ai-space/ 。GitHub Actions 的依赖安装、20 项单元测试、生产构建与部署均成功；线上首页、JS/CSS、PWA manifest 均 HTTP 200，start_url/scope 均为 `/ai-space/`。见 [deployment-check.json](deployment-check.json)。
 - 四端点真实 OPTIONS 与无效令牌的浏览器请求，Chrome/WebKit 可读到 401，见 [cors-check.json](cors-check.json)。已记录允许请求头通配符的规范风险。
 - 用户授权临时有效令牌：模型列表 HTTP 200（333 个，包含两个指定默认模型）；gpt-6.1-sol 流式聊天 HTTP 200；gpt-image-2.5-sunburst 生成、单图 multipart 编辑均 HTTP 200，返回真实 base64 图片。实际图片已目视确认从蓝圆变成橙圆。详见 [live-check.json](live-check.json)。测试过程可能计费，未查询余额或具体扣费金额。
 - 本机网页直接调用有效令牌：模型列表、聊天与单图编辑均成功收到结果，聊天显示“网页聊天测试成功。”。另外用与网页相同的 4096 输出上限验证三条消息的多轮聊天，HTTP 200，回答“多轮测试成功。”。密钥仅保存在浏览器会话，未写入源码、记录或压缩包。
@@ -17,7 +18,7 @@
 
 - 其他令牌的权限、各模型精确计费、Claude/Gemini/GLM 的实际回答；GPT Image 多参考图和其他尺寸。
 - Nano Banana 基础、Pro 与固定分辨率模型的有效请求、1–6 张图的服务端解析、返回 URL/base64、生成质量和真实修图效果。
-- 最终账号的 GitHub Actions 与 Pages 线上部署（当前目录没有指定远程仓库，不会擅自创建或推送）。已交付完整 workflow、依赖锁和中文部署步骤。
+- 线上页面的完整浏览器交互与有效令牌跨域调用仍需在实际手机验收；此次部署已核对 HTTP 资源与 Actions 状态，预览工具未能完成线上浏览器检查。
 - iPhone Safari 与 Android Chrome 真机：软键盘、相册权限、HEIC 转换、照片保存/分享、PWA 安装、刘海与横竖屏。WebKit 自动化不能替代这些系统级验收。
 - 实际部署域名、其他浏览器版本或服务商后续变更后的 CORS。
 
