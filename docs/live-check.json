@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-10-13T01:20:39.613Z",
+  "models": {
+    "status": 200,
+    "count": 333,
+    "requested": [
+      {
+        "id": "gpt-6.1-sol",
+        "listed": true
+      },
+      {
+        "id": "gpt-image-2.5-sunburst",
+        "listed": true
+      }
+    ],
+    "relevant": [
+      "gpt-6-astra",
+      "gpt-6-luna",
+      "gpt-6-sol",
+      "gpt-6.1-sol",
+      "gpt-image-2",
+      "gpt-image-2-c",
+      "gpt-image-2-vip",
+      "gpt-image-2.5-flare",
+      "gpt-image-2.5-sunburst",
+      "gpt-image-1",
+      "gpt-image-1.5"
+    ]
+  },
+  "calls": [
+    {
+      "label": "gpt-6.1-sol streaming chat",
+      "status": 200,
+      "elapsedSeconds": 23,
+      "contentType": "text/event-stream",
+      "streamEvents": 9,
+      "finished": true,
+      "reply": "AI Space 连接成功。"
+    },
+    {
+      "label": "gpt-image-2.5-sunburst generate",
+      "status": 200,
+      "elapsedSeconds": 24,
+      "contentType": "application/json",
+      "topLevelFields": [
+        "created",
+        "data",
+        "usage"
+      ],
+      "images": [
+        {
+          "fields": [
+            "b64_json",
+            "height",
+            "mime_type",
+            "sha256",
+            "size_bytes",
+            "width"
+          ],
+          "format": "base64",
+          "width": 2048,
+          "height": 2048
+        }
+      ],
+      "savedFile": "artifacts/live-generated.png",
+      "bytes": 1382945,
+      "requestedSize": "1024x1024"
+    },
+    {
+      "label": "gpt-image-2.5-sunburst edit",
+      "status": 200,
+      "elapsedSeconds": 20,
+      "contentType": "application/json",
+      "topLevelFields": [
+        "created",
+        "data",
+        "usage"
+      ],
+      "images": [
+        {
+          "fields": [
+            "b64_json",
+            "height",
+            "mime_type",
+            "sha256",
+            "size_bytes",
+            "width"
+          ],
+          "format": "base64",
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "savedFile": "artifacts/live-edited.png",
+      "bytes": 918465,
+      "requestedSize": "1024x1024"
+    },
+    {
+      "label": "gpt-6.1-sol multi-turn with 4096 cap",
+      "status": 200,
+      "elapsedSeconds": 3,
+      "contentType": "text/event-stream",
+      "streamEvents": 4,
+      "finished": true,
+      "reply": "多轮测试成功。"
+    },
+    {
+      "label": "gpt-6.1-sol complex multi-turn compatibility check",
+      "status": 200,
+      "elapsedSeconds": 3,
+      "contentType": "text/event-stream",
+      "streamEvents": 3,
+      "finished": true,
+      "reply": "",
+      "success": false,
+      "note": "HTTP 200 with no text; subsequent inspection confirmed a streamed upstream overload."
+    },
+    {
+      "label": "gpt-6.1-sol complex request stream inspection",
+      "status": 200,
+      "elapsedSeconds": 32,
+      "contentType": "text/event-stream",
+      "streamEvents": 3,
+      "finished": true,
+      "reply": "",
+      "eventDetails": [
+        {
+          "fields": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "service_tier"
+          ],
+          "finishReason": null,
+          "deltaFields": [
+            "role"
+          ]
+        },
+        {
+          "fields": [
+            "error"
+          ],
+          "deltaFields": [],
+          "error": {
+            "type": "upstream_error",
+            "message": "Our servers are currently overloaded. Please try again later."
+          }
+        },
+        {
+          "fields": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "system_fingerprint",
+            "choices",
+            "usage"
+          ],
+          "deltaFields": []
+        }
+      ],
+      "success": false
+    }
+  ],
+  "browser": {
+    "modelList": "333 models returned",
+    "chat": "网页聊天测试成功。",
+    "singleImageEdit": "result received and comparison controls visible",
+    "keyStorage": "session only"
+  }
+}

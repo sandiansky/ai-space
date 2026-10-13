@@ -1,0 +1,20 @@
+[
+  {
+    "browser": "Chrome",
+    "subpath": "/ai-space/",
+    "htmlStatus": 200,
+    "manifestScope": "/ai-space/",
+    "serviceWorkerOfflineReload": true,
+    "cachedApiResponses": 0,
+    "pageErrors": []
+  },
+  {
+    "browser": "WebKit",
+    "subpath": "/ai-space/",
+    "htmlStatus": 200,
+    "manifestScope": "/ai-space/",
+    "serviceWorkerOfflineReload": true,
+    "cachedApiResponses": 0,
+    "pageErrors": []
+  }
+]

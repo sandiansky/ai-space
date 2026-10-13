@@ -1,0 +1,171 @@
+{
+  "checkedAt": "2026-10-13T01:08:37.696Z",
+  "preflightOrigin": "https://ai-space-example.github.io",
+  "note": "Real GitHub Pages document; no routing/interception, live OPTIONS/GET/POST, only deliberately invalid credentials, no paid requests. Actual deployment origin and valid-key success still need retesting.",
+  "preflights": [
+    {
+      "path": "models",
+      "status": 204,
+      "allowOrigin": "*",
+      "allowHeaders": "*",
+      "allowMethods": "GET,POST,PUT,DELETE,OPTIONS"
+    },
+    {
+      "path": "chat/completions",
+      "status": 204,
+      "allowOrigin": "*",
+      "allowHeaders": "*",
+      "allowMethods": "GET,POST,PUT,DELETE,OPTIONS"
+    },
+    {
+      "path": "images/generations",
+      "status": 204,
+      "allowOrigin": "*",
+      "allowHeaders": "*",
+      "allowMethods": "GET,POST,PUT,DELETE,OPTIONS"
+    },
+    {
+      "path": "images/edits",
+      "status": 204,
+      "allowOrigin": "*",
+      "allowHeaders": "*",
+      "allowMethods": "GET,POST,PUT,DELETE,OPTIONS"
+    }
+  ],
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.39",
+      "origin": "https://mdn.github.io",
+      "result": [
+        {
+          "path": "models",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "chat/completions",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "images/generations",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "images/edits",
+          "readable": true,
+          "status": 401
+        }
+      ],
+      "wirePreflights": [
+        {
+          "url": "https://api.gpt.ge/v1/models",
+          "status": 204,
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-headers": "*",
+            "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-max-age": "43200",
+            "cache-control": "no-cache",
+            "date": "Tue, 13 Oct 2026 01:08:33 GMT",
+            "server": "openresty",
+            "strict-transport-security": "max-age=31536000",
+            "x-oneapi-request-id": "2026101309083350883516231131312"
+          }
+        },
+        {
+          "url": "https://api.gpt.ge/v1/chat/completions",
+          "status": 204,
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-headers": "*",
+            "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-max-age": "43200",
+            "cache-control": "no-cache",
+            "date": "Tue, 13 Oct 2026 01:08:33 GMT",
+            "server": "openresty",
+            "strict-transport-security": "max-age=31536000",
+            "x-oneapi-request-id": "2026101309083396749781946066338"
+          }
+        },
+        {
+          "url": "https://api.gpt.ge/v1/images/generations",
+          "status": 204,
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-headers": "*",
+            "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-max-age": "43200",
+            "cache-control": "no-cache",
+            "date": "Tue, 13 Oct 2026 01:08:34 GMT",
+            "server": "openresty",
+            "strict-transport-security": "max-age=31536000",
+            "x-oneapi-request-id": "2026101309083443624294175149574"
+          }
+        },
+        {
+          "url": "https://api.gpt.ge/v1/images/edits",
+          "status": 204,
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-headers": "*",
+            "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-max-age": "43200",
+            "cache-control": "no-cache",
+            "date": "Tue, 13 Oct 2026 01:08:34 GMT",
+            "server": "openresty",
+            "strict-transport-security": "max-age=31536000",
+            "x-oneapi-request-id": "2026101309083489424383305910938"
+          }
+        }
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()"
+      ]
+    },
+    {
+      "name": "WebKit",
+      "version": "27.2",
+      "origin": "https://mdn.github.io",
+      "result": [
+        {
+          "path": "models",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "chat/completions",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "images/generations",
+          "readable": true,
+          "status": 401
+        },
+        {
+          "path": "images/edits",
+          "readable": true,
+          "status": 401
+        }
+      ],
+      "wirePreflights": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 401 ()"
+      ]
+    }
+  ]
+}
